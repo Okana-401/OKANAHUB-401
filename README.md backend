@@ -1,0 +1,72 @@
+# OkanaHub Backend
+
+A Node.js backend for OkanaHub, a social platform. This repository is structured for scalability and maintainability with MVC pattern, REST API endpoints, real-time support, and modular service logic.
+
+## Folder Structure
+
+```
+okanahub-backend/
+├── server.js
+├── package.json
+├── .env
+├── config/
+├── controllers/
+├── middleware/
+├── models/
+├── routes/
+├── services/
+├── utils/
+├── validators/
+├── uploads/
+├── tests/
+├── socket/
+├── jobs/
+├── email/
+├── docs/
+```
+
+## Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone <your-repo-url>
+    cd okanahub-backend
+    ```
+
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3. **Environment Setup**
+
+    Create a `.env` file in the root directory:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    Edit the `.env` file and add your environment variables (see `.env` for details).
+
+4. **Run the server**
+
+    ```bash
+    npm run dev  # for nodemon hot-reload
+    # or
+    npm start    # for production
+    ```
+
+5. **API Docs**
+
+    - Swagger docs available at `/api-docs` (if enabled).
+    - Postman collection in `docs/postman_collection.json`.
+
+6. **Testing**
+
+    ```bash
+    npm test
+    ```
+
+---
+
+**Initial commit - OKANAHUB backend structure**
